@@ -1,0 +1,236 @@
+{
+  "languages": {
+    "en": {
+      "brand": "WENSA",
+      "nav": [
+        { "label": "Home", "href": "#home" },
+        { "label": "About", "href": "#about" },
+        { "label": "Events", "href": "/events.html" },
+        { "label": "Store", "href": "/store.html" },
+        { "label": "Contact", "href": "#contact" }
+      ],
+      "hero": {
+        "eyebrow": "HOPE STARTS WITH US",
+        "title": "Together, we bring hope.",
+        "text": "A community built on compassion, standing beside people affected by cancer and turning solidarity into meaningful action.",
+        "primaryCta": "Discover WENSA",
+        "secondaryCta": "How to help"
+      },
+      "about": {
+        "eyebrow": "WHO WE ARE",
+        "title": "More than a group. A reason to care.",
+        "body": [
+          "WENSA is a community initiative driven by empathy, solidarity and the belief that no one should face a difficult journey alone.",
+          "Through our activities, products and community efforts, we want to transform good intentions into practical support and lasting impact."
+        ]
+      },
+      "story": {
+        "eyebrow": "COMMUNITY VOICES",
+        "title": "People remember the warmth.",
+        "cards": [
+          {
+            "quote": "WENSA made me feel less alone. The compassion and presence were real, and that changed everything.",
+            "name": "Fatima",
+            "role": "Volunteer"
+          },
+          {
+            "quote": "Every visit, every conversation, every gesture reminded us that kindness can still be a powerful act of healing.",
+            "name": "Hassan",
+            "role": "Community supporter"
+          },
+          {
+            "quote": "When people come together with intention, hope stops being abstract and becomes visible.",
+            "name": "Leila",
+            "role": "Participant"
+          }
+        ]
+      },
+      "visits": [
+        {
+          "title": "Rabat community visit",
+          "location": "Rabat",
+          "text": "Friendly visits where we listen, share encouragement and support families facing difficult moments.",
+          "image": "https://images.unsplash.com/photo-1517841905240-472988c2477c?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Care & kindness day",
+          "location": "Casablanca",
+          "text": "Small acts of care, warm conversations and volunteer support during our local outreach moments.",
+          "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Community gathering",
+          "location": "Marrakech",
+          "text": "Open moments of connection to raise awareness, strengthen local solidarity and invite new support.",
+          "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80"
+        }
+      ],
+      "events": [
+        {
+          "title": "Solidarity Walk",
+          "city": "Rabat",
+          "date": "Saturday · 10:00 AM",
+          "description": "A calm and meaningful walk to raise awareness and support families affected by cancer.",
+          "tag": "Community"
+        },
+        {
+          "title": "Care & Kindness Night",
+          "city": "Casablanca",
+          "date": "Friday · 7:00 PM",
+          "description": "An evening of listening, support and practical ways to help our community.",
+          "tag": "Support"
+        },
+        {
+          "title": "Open Community Café",
+          "city": "Marrakech",
+          "date": "Sunday · 9:30 AM",
+          "description": "A warm gathering where neighbors meet, share ideas and discover how to take part.",
+          "tag": "Meetup"
+        }
+      ],
+      "shop": [
+        {
+          "name": "Hope T-shirt",
+          "price": "240 MAD",
+          "type": "Support Collection",
+          "description": "A meaningful everyday piece representing care, courage and belonging."
+        },
+        {
+          "name": "Solidarity Mug",
+          "price": "120 MAD",
+          "type": "Daily Ritual",
+          "description": "A thoughtful object for the moments when hope and warmth matter most."
+        },
+        {
+          "name": "WENSA Notebook",
+          "price": "150 MAD",
+          "type": "Community Gift",
+          "description": "A simple and elegant notebook made for reflection and intention."
+        }
+      ],
+      "contact": {
+        "eyebrow": "GET IN TOUCH",
+        "title": "Let's make hope happen.",
+        "text": "Want to collaborate, ask about our work or learn how to get involved? Send us a message.",
+        "email": "hello@wensa.org",
+        "location": "Morocco"
+      }
+    },
+    "fr": {
+      "brand": "WENSA",
+      "nav": [
+        { "label": "Accueil", "href": "#home" },
+        { "label": "À propos", "href": "#about" },
+        { "label": "Événements", "href": "/events.html" },
+        { "label": "Boutique", "href": "/store.html" },
+        { "label": "Contact", "href": "#contact" }
+      ],
+      "hero": {
+        "eyebrow": "L'ESPOIR COMMENCE AVEC NOUS",
+        "title": "Ensemble, nous portons l'espoir.",
+        "text": "Une communauté fondée sur la compassion, à côté des personnes touchées par le cancer et tournée vers l'action solidaire.",
+        "primaryCta": "Découvrir WENSA",
+        "secondaryCta": "Comment aider"
+      },
+      "about": {
+        "eyebrow": "QUI SOMMES-NOUS",
+        "title": "Plus qu'un groupe. Une raison de se soucier.",
+        "body": [
+          "WENSA est une initiative communautaire guidée par l'empathie, la solidarité et la conviction que personne ne doit traverser une étape difficile seul.",
+          "À travers nos activités, produits et actions collectives, nous voulons transformer les bonnes intentions en soutien concret et impact durable."
+        ]
+      },
+      "story": {
+        "eyebrow": "VOIX DE LA COMMUNAUTÉ",
+        "title": "Les gens se souviennent de la chaleur.",
+        "cards": [
+          {
+            "quote": "WENSA m'a fait sentir moins seule. La compassion et la présence étaient réelles, et cela a tout changé.",
+            "name": "Fatima",
+            "role": "Bénévole"
+          },
+          {
+            "quote": "Chaque visite, chaque conversation, chaque geste nous rappelait que la gentillesse peut être une force de guérison.",
+            "name": "Hassan",
+            "role": "Soutien communautaire"
+          },
+          {
+            "quote": "Quand les gens se rassemblent avec intention, l'espoir cesse d'être abstrait pour devenir visible.",
+            "name": "Leila",
+            "role": "Participante"
+          }
+        ]
+      },
+      "visits": [
+        {
+          "title": "Visite de la communauté de Rabat",
+          "location": "Rabat",
+          "text": "Des visites conviviales où nous écoutons, partageons de l'encouragement et soutenons les familles en difficulté.",
+          "image": "https://images.unsplash.com/photo-1517841905240-472988c2477c?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Journée de bienveillance",
+          "location": "Casablanca",
+          "text": "Des gestes simples, des échanges chaleureux et un soutien concret lors de nos actions locales.",
+          "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Rencontre communautaire",
+          "location": "Marrakech",
+          "text": "Des moments de rencontre pour sensibiliser, renforcer la solidarité locale et inviter au soutien.",
+          "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80"
+        }
+      ],
+      "events": [
+        {
+          "title": "Marche de solidarité",
+          "city": "Rabat",
+          "date": "Samedi · 10:00",
+          "description": "Une marche douce et pleine de sens pour sensibiliser et soutenir les familles touchées par le cancer.",
+          "tag": "Communauté"
+        },
+        {
+          "title": "Nuit de soin et de gentillesse",
+          "city": "Casablanca",
+          "date": "Vendredi · 19:00",
+          "description": "Une soirée d'écoute, de soutien et d'actions concrètes pour aider la communauté.",
+          "tag": "Soutien"
+        },
+        {
+          "title": "Café communautaire ouvert",
+          "city": "Marrakech",
+          "date": "Dimanche · 09:30",
+          "description": "Une rencontre chaleureuse où les voisins échangent, partagent des idées et découvrent comment participer.",
+          "tag": "Rencontre"
+        }
+      ],
+      "shop": [
+        {
+          "name": "T-shirt Hope",
+          "price": "240 MAD",
+          "type": "Collection de soutien",
+          "description": "Une pièce quotidienne symbolisant le courage, la solidarité et l'appartenance."
+        },
+        {
+          "name": "Tasse de solidarité",
+          "price": "120 MAD",
+          "type": "Rituel quotidien",
+          "description": "Un objet réfléchi pour les moments où l'espoir et la chaleur comptent."
+        },
+        {
+          "name": "Cahier WENSA",
+          "price": "150 MAD",
+          "type": "Cadeau communautaire",
+          "description": "Un carnet simple et élégant pour la réflexion et l'intention."
+        }
+      ],
+      "contact": {
+        "eyebrow": "CONTACT",
+        "title": "Faisons arriver l'espoir.",
+        "text": "Vous voulez collaborer, en savoir plus ou rejoindre le mouvement ? Écrivez-nous.",
+        "email": "hello@wensa.org",
+        "location": "Maroc"
+      }
+    }
+  }
+}
