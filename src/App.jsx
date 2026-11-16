@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { useEffect, useMemo, useState } from 'react';
-=======
-import { useMemo, useState } from 'react';
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
 import data from './data/siteData.json';
 
 const defaultLang = 'en';
@@ -12,7 +8,6 @@ const imageMap = [
   'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80',
 ];
 
-<<<<<<< HEAD
 const arabicContent = {
   brand: 'WENSA',
   nav: [
@@ -197,17 +192,11 @@ export default function App() {
   const content = useMemo(() => languages[language] || languages[defaultLang], [language, languages]);
   const labels = pageText[language] || pageText[defaultLang];
   const isArabic = language === 'ar';
-=======
-export default function App() {
-  const [language, setLanguage] = useState(() => localStorage.getItem('wensa_lang') || defaultLang);
-  const content = useMemo(() => data.languages[language] || data.languages[defaultLang], [language]);
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
   const navItems = content.nav || [];
   const stories = content.story?.cards || [];
   const visitCards = content.visits || [];
   const eventCards = content.events || [];
   const shopItems = content.shop || [];
-<<<<<<< HEAD
   const placeCards = [
     { name: 'Rabat', image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80' },
     { name: 'Casablanca', image: 'https://images.unsplash.com/photo-1539650116574-75c0c6d73d7e?auto=format&fit=crop&w=1200&q=80' },
@@ -226,11 +215,6 @@ export default function App() {
   const onLanguageChange = (nextLang) => {
     setLanguage(nextLang);
     setMenuOpen(false);
-=======
-
-  const onLanguageChange = (nextLang) => {
-    setLanguage(nextLang);
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
     localStorage.setItem('wensa_lang', nextLang);
   };
 
@@ -242,7 +226,6 @@ export default function App() {
           <span>{content.brand}</span>
         </div>
 
-<<<<<<< HEAD
         <button
           type="button"
           className="topbar-toggle"
@@ -263,16 +246,6 @@ export default function App() {
 
         <div className="lang-switch" aria-label="Language selector">
           {Object.keys(languages).map((key) => (
-=======
-        <nav className="main-nav" aria-label="Main navigation">
-          {navItems.map((item) => (
-            <a key={item.href} href={item.href}>{item.label}</a>
-          ))}
-        </nav>
-
-        <div className="lang-switch" aria-label="Language selector">
-          {Object.keys(data.languages).map((key) => (
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
             <button
               key={key}
               type="button"
@@ -314,19 +287,13 @@ export default function App() {
               className="feature-image"
             />
             <div className="about-copy">
-<<<<<<< HEAD
               {content.about.body.map((paragraph, index) => (
                 <p key={paragraph} className={index > 0 ? 'mobile-trim' : ''}>{paragraph}</p>
-=======
-              {content.about.body.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
               ))}
 
               <div className="mini-grid">
                 <article>
                   <strong>♡</strong>
-<<<<<<< HEAD
                   <h3>{labels.mission}</h3>
                   <p>{labels.missionBody}</p>
                 </article>
@@ -334,15 +301,6 @@ export default function App() {
                   <strong>✧</strong>
                   <h3>{labels.vision}</h3>
                   <p>{labels.visionBody}</p>
-=======
-                  <h3>Our mission</h3>
-                  <p>Stand with patients and families through compassion and action.</p>
-                </article>
-                <article>
-                  <strong>✧</strong>
-                  <h3>Our vision</h3>
-                  <p>A more aware, supportive and connected community.</p>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
                 </article>
               </div>
             </div>
@@ -355,11 +313,7 @@ export default function App() {
               <small className="eyebrow">{content.story.eyebrow}</small>
               <h2>{content.story.title}</h2>
             </div>
-<<<<<<< HEAD
             <a href="#contact" className="button ghost">{labels.storyCta}</a>
-=======
-            <a href="#contact" className="button ghost">Be part of the story</a>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
           </div>
 
           <div className="story-grid">
@@ -379,13 +333,8 @@ export default function App() {
         <section className="section visits">
           <div className="section-header split">
             <div>
-<<<<<<< HEAD
               <small className="eyebrow">{labels.placesEyebrow}</small>
               <h2>{labels.placesTitle}</h2>
-=======
-              <small className="eyebrow">OUR VISITS</small>
-              <h2>Moments that move people.</h2>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
             </div>
           </div>
 
@@ -403,7 +352,6 @@ export default function App() {
           </div>
         </section>
 
-<<<<<<< HEAD
         <section className="section">
           <div className="place-grid">
             {placeCards.map((place) => (
@@ -438,21 +386,13 @@ export default function App() {
           </div>
         </section>
 
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
         <section className="section" id="events">
           <div className="section-header split">
             <div>
               <small className="eyebrow">OUR EVENTS</small>
-<<<<<<< HEAD
               <h2>{labels.eventsTitle}</h2>
             </div>
             <a href="#contact" className="button ghost">{labels.contactButton}</a>
-=======
-              <h2>Join the movement. Be part of the next act of hope.</h2>
-            </div>
-            <a href="#contact" className="button ghost">Contact us</a>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
           </div>
 
           <div className="event-list">
@@ -478,7 +418,6 @@ export default function App() {
           </div>
         </section>
 
-<<<<<<< HEAD
         <section className="section" id="donation">
           <div className="section-header split">
             <div>
@@ -489,17 +428,11 @@ export default function App() {
           </div>
         </section>
 
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
         <section className="section" id="shop">
           <div className="section-header split">
             <div>
               <small className="eyebrow">STORE</small>
-<<<<<<< HEAD
               <h2>{labels.shopTitle}</h2>
-=======
-              <h2>Support WENSA with purpose.</h2>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
             </div>
           </div>
 
@@ -530,7 +463,6 @@ export default function App() {
 
           <form className="contact-form">
             <label>
-<<<<<<< HEAD
               {labels.formName}
               <input type="text" placeholder="Name" />
             </label>
@@ -543,20 +475,6 @@ export default function App() {
               <textarea rows="5" placeholder="Write your message..." />
             </label>
             <button type="button" className="button primary">{labels.send}</button>
-=======
-              Your name
-              <input type="text" placeholder="Name" />
-            </label>
-            <label>
-              Email address
-              <input type="email" placeholder="you@example.com" />
-            </label>
-            <label>
-              Your message
-              <textarea rows="5" placeholder="Write your message..." />
-            </label>
-            <button type="button" className="button primary">Send message</button>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
           </form>
         </section>
       </main>
@@ -566,11 +484,7 @@ export default function App() {
           <img src="/assets/wensa-logo.jpeg" alt="WENSA logo" className="brand-logo" />
           <span>{content.brand}</span>
         </div>
-<<<<<<< HEAD
         <p>{labels.footerTag}</p>
-=======
-        <p>Together, we bring hope.</p>
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
         <small>© 2026 WENSA</small>
       </footer>
     </div>

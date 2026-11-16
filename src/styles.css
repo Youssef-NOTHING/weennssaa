@@ -85,7 +85,6 @@ button, input, textarea { font: inherit; }
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 .topbar-toggle {
   display: none;
   border: 1px solid var(--line);
@@ -98,15 +97,12 @@ button, input, textarea { font: inherit; }
   font-size: 1.3rem;
 }
 
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
 .main-nav a {
   color: var(--navy);
   font-size: 0.95rem;
   opacity: 0.8;
 }
 
-<<<<<<< HEAD
 .main-nav a:hover {
   opacity: 1;
 }
@@ -120,8 +116,6 @@ button, input, textarea { font: inherit; }
   font-weight: 700;
 }
 
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
 .lang-switch {
   display: flex;
   align-items: center;
@@ -353,7 +347,6 @@ button, input, textarea { font: inherit; }
   gap: 18px;
 }
 
-<<<<<<< HEAD
 .place-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -406,8 +399,6 @@ button, input, textarea { font: inherit; }
   border-radius: 16px;
 }
 
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
 .visit-card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -628,11 +619,8 @@ button, input, textarea { font: inherit; }
   .hero,
   .two-col,
   .visit-grid,
-<<<<<<< HEAD
   .place-grid,
   .video-grid,
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
   .shop-grid,
   .contact-box {
     grid-template-columns: 1fr;
@@ -651,7 +639,6 @@ button, input, textarea { font: inherit; }
     grid-template-columns: 1fr;
   }
 }
-<<<<<<< HEAD
 
 @media (max-width: 600px) {
   .app-shell {
@@ -723,5 +710,3 @@ button, input, textarea { font: inherit; }
     padding-top: 50px;
   }
 }
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e

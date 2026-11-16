@@ -138,27 +138,18 @@ html[dir=rtl] .s-tagline,html[dir=rtl] .f-slogan,html[dir=rtl] .s-note{font-fami
   .store-page .product-description{min-height:0}
 }
 @media(max-width:620px){
-<<<<<<< HEAD
   .store-page header{justify-content:space-between;padding-top:24px}
-=======
-  .store-page nav a{display:none}
-  .store-page header{justify-content:center;padding-top:34px}
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
   .store-page nav{margin:0}
   .store-page .store-main{padding:8px 4px}
   .sheet{border-width:9px;outline-offset:-5px}
   .corner{width:52px;height:52px;top:5px}.corner.tl{left:5px}.corner.tr{right:5px}
   .store-page .chat-launcher{right:14px;bottom:14px}
-<<<<<<< HEAD
   .s-tagline{font-size:24px;line-height:1.2}
   .store-page .product-description{font-size:13px;line-height:1.45}
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
 }
 .store-page a:focus-visible,.store-page button:focus-visible,.store-page input:focus-visible,.store-page textarea:focus-visible{outline:3px solid var(--g5);outline-offset:2px}
 .f-slogan,.s-tagline,.s-note{text-wrap:balance}
 .store-page nav,.store-page nav.open{position:static;top:auto;padding:0;background:none;flex-direction:row;align-items:center;width:auto}
-<<<<<<< HEAD
 
 @media(max-width:760px){
   .store-page .toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid #c49a45b3;border-radius:10px;background:var(--p2);color:var(--m9);font-size:22px}
@@ -168,5 +159,3 @@ html[dir=rtl] .s-tagline,html[dir=rtl] .f-slogan,html[dir=rtl] .s-note{font-fami
   .store-page .pill{display:block;text-align:center}
   .store-page .lang-switch{width:100%;justify-content:center}
 }
-=======
->>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
