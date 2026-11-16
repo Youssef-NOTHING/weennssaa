@@ -48,13 +48,18 @@ const chatLauncher=document.getElementById("chat-launcher"),chatWindow=document.
 const chatBody=document.getElementById("chat-body"),chatForm=document.getElementById("chat-form"),chatInput=document.getElementById("chat-input");
 const chatHistory=[];
 const chatSettings=()=>{try{return JSON.parse(localStorage.getItem("wensa_chat_settings"))||{enabled:true,name:"WENSA Assistant",welcome:"Hello! Ask me about WENSA, products, donations or contacting the team."};}catch{return {enabled:true,name:"WENSA Assistant",welcome:"Hello! Ask me about WENSA, products, donations or contacting the team."};}};
+<<<<<<< HEAD
 function chatSay(text,cls){if(!chatBody)return null;const div=document.createElement("div");div.className=cls;div.textContent=text;chatBody.appendChild(div);chatBody.scrollTop=chatBody.scrollHeight;return div;}
+=======
+function chatSay(text,cls){const div=document.createElement("div");div.className=cls;div.textContent=text;chatBody.appendChild(div);chatBody.scrollTop=chatBody.scrollHeight;return div;}
+>>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
 function languageName(){return ({en:"English",fr:"French",ar:"Arabic"})[currentLang()]||"French";}
 async function askWensaAI(question){
  const d=translations[currentLang()];
  const pending=chatSay(currentLang()==="ar"?"جارٍ التفكير...":currentLang()==="fr"?"Réflexion en cours…":"Thinking…","bot-msg");
  try{
   const response=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:question,language:languageName(),history:chatHistory.slice(-8)})});
+<<<<<<< HEAD
   const data=await response.json().catch(()=>({}));
   if(!response.ok)throw new Error(data.error||"Chat service unavailable");
   if(pending)pending.textContent=data.reply||d.chatFallback;
@@ -65,15 +70,31 @@ async function askWensaAI(question){
    :currentLang()==="fr"
    ?"L assistant est indisponible pour le moment. Réessayez ou contactez-nous via la page Contact."
    :"The assistant is temporarily unavailable. Please try again or contact us from the Contact page.";
+=======
+  const data=await response.json();
+  if(!response.ok)throw new Error(data.error||"Chat service unavailable");
+  pending.textContent=data.reply;
+  chatHistory.push({role:"user",content:question},{role:"assistant",content:data.reply});
+ }catch(err){
+  pending.textContent=currentLang()==="ar"
+   ?"خدمة المساعد الذكي غير مفعلة حالياً. شغّل الخادم وأضف مفتاح API في ملف البيئة. يمكنك مراسلتنا عبر صفحة التواصل."
+   :currentLang()==="fr"
+   ?"L’assistant IA n’est pas encore configuré. Démarrez le serveur et ajoutez la clé API dans le fichier d’environnement. Vous pouvez aussi nous écrire via la page Contact."
+   :"The AI assistant is not configured yet. Start the server and add your API key in the environment file. You can also contact us through the Contact page.";
+>>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
  }
 }
 window.refreshChatLanguage=()=>{
  if(!chatWindow)return;
  const config=chatSettings();
  const d=translations[currentLang()];
+<<<<<<< HEAD
  const title=chatWindow.querySelector(".chat-head b");
  const sub=chatWindow.querySelector(".chat-head small"),welcome=chatWindow.querySelector("[data-i='chatWelcome']");
  if(title)title.textContent=config.name||"WENSA Assistant";
+=======
+ const sub=chatWindow.querySelector(".chat-head small"),welcome=chatWindow.querySelector("[data-i='chatWelcome']");
+>>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
  if(sub)sub.textContent=d.chatSub;if(welcome&&chatHistory.length===0)welcome.textContent=config.welcome||d.chatWelcome;
  if(chatInput)chatInput.placeholder=d.chatPlaceholder;
  const quick=document.getElementById("chat-quick");
@@ -85,6 +106,9 @@ if(chatLauncher&&chatWindow){
   if(config.enabled===false){ chatLauncher.hidden=true; chatWindow.hidden=true; }
   chatLauncher.onclick=()=>{chatWindow.hidden=false;chatLauncher.hidden=true;};
   document.getElementById("chat-close").onclick=()=>{chatWindow.hidden=true;chatLauncher.hidden=false;};
+<<<<<<< HEAD
   window.refreshChatLanguage();
+=======
+>>>>>>> 5dab93069b00b6bf4480fbb88dd1503546a8ad6e
 }
 if(chatForm)chatForm.addEventListener("submit",async e=>{e.preventDefault();const q=chatInput.value.trim();if(!q)return;chatSay(q,"user-msg");chatInput.value="";chatInput.disabled=true;await askWensaAI(q);chatInput.disabled=false;chatInput.focus();});
